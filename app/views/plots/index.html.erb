@@ -4,7 +4,10 @@
 <div id="plots<%= index %>">
   <p>Plot Number: <%= plot.number  %></p>
   <% plot.plants.each do |plant| %>
+  <div id="plants-<%= plant.id %>">
     <p><%= plant.name %></p>
+    <p><%= button_to 'Remove Plant', "/plot_plants/#{plot.id}/#{plant.id}", method: :delete %>
+    </div>
   <% end %>
 </div>
 <% end %>

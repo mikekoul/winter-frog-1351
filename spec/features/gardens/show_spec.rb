@@ -33,19 +33,25 @@ RSpec.describe 'garden show page' do
 
       within "#plants0" do
         expect(page).to have_content("Tomato")
+        expect(page).to have_content("Days To Harvest: 95")
       end
 
       within "#plants1" do
         expect(page).to have_content("Bell Pepper")
+        expect(page).to have_content("Days To Harvest: 90")
       end
 
       within "#plants2" do
         expect(page).to have_content("Potato")
+        expect(page).to have_content("Days To Harvest: 99")
       end
 
       expect(page).to_not have_content("Squash")
+      expect(page).to_not have_content("Days To Harvest: 110")
       expect(page).to_not have_content("Garlic")
+      expect(page).to_not have_content("Days To Harvest: 120")
       expect(page).to_not have_content("Cucumber")
+      expect(page).to_not have_content("Days To Harvest: 101")
     end
   end
 end

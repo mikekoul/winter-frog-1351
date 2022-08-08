@@ -42,7 +42,7 @@ RSpec.describe 'garden show page' do
       within "#plants2" do
         expect(page).to have_content("Potato")
       end
-      
+
       expect(page).to_not have_content("Squash")
       expect(page).to_not have_content("Garlic")
       expect(page).to_not have_content("Cucumber")

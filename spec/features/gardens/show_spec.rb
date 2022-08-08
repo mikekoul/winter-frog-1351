@@ -45,7 +45,7 @@ RSpec.describe 'garden show page' do
         expect(page).to have_content("Potato")
         expect(page).to have_content("Days To Harvest: 99")
       end
-      
+
       expect(page).to_not have_content("Squash")
       expect(page).to_not have_content("Days To Harvest: 110")
       expect(page).to_not have_content("Garlic")

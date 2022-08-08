@@ -1,0 +1,7 @@
+<h1><%= @garden.name %> Show Page</h1>
+<% @garden.short_harvest.each_with_index do |plant, index| %>
+<div id="plants<%= index %>">
+<h3><%= plant.name %></h3>
+<p>Days To Harvest<%= plant.days_to_harvest %>
+</div>
+<% end %>

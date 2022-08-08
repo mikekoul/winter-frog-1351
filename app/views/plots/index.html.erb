@@ -7,7 +7,7 @@
   <div id="plants-<%= plant.id %>">
     <p><%= plant.name %></p>
     <p><%= button_to 'Remove Plant', "/plot_plants/#{plot.id}/#{plant.id}", method: :delete %>
-    </div>
+  </div>
   <% end %>
 </div>
 <% end %>
